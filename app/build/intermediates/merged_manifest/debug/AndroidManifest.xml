@@ -13,7 +13,7 @@
 
     <application
         android:name="com.example.randomquote.QuoteApplication"
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"

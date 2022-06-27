@@ -1,6 +1,7 @@
 package com.example.randomquote
 
 import android.app.Application
+import com.example.randomquote.adapters.PagingAdapter
 import com.example.randomquote.api.QuoteService
 import com.example.randomquote.api.RetrofitHelper
 import com.example.randomquote.db.QuoteDatabase

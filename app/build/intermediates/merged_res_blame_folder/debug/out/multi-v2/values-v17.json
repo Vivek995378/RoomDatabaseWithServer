@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/adda247/Downloads/RandomQuote-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
+            "outputFile": "/home/adda247/AndroidStudioProjects/RandomQuote/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
             "map": [
                 {
                     "source": "/home/adda247/.gradle/caches/transforms-3/61acccfaa5da4b0e583a74dfb4979cab/transformed/appcompat-1.3.1/res/values-v17/values-v17.xml",
