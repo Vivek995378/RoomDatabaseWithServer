@@ -9,22 +9,28 @@ import com.example.randomquote.models.Result
 @Database(entities = [Result::class], version = 1)
 abstract class QuoteDatabase : RoomDatabase() {
 
-    abstract fun quoteDao() : QuoteDao
+    abstract fun quoteDao(): QuoteDao
 
-    companion object{
+    companion object {
+
         @Volatile
         private var INSTANCE: QuoteDatabase? = null
-
         fun getDatabase(context: Context): QuoteDatabase {
-            if (INSTANCE == null) {
-                synchronized(this){
-                    INSTANCE = Room.databaseBuilder(context,
+            synchronized(this) {
+                var instance = INSTANCE
+
+                if (instance == null) {
+                    instance = Room.databaseBuilder(
+                        context.applicationContext,
                         QuoteDatabase::class.java,
-                        "quoteDB")
+                        "quoteDB"
+                    )
+                        .fallbackToDestructiveMigration()
                         .build()
+                    INSTANCE = instance
                 }
+                return instance
             }
-            return INSTANCE!!
         }
     }
 }

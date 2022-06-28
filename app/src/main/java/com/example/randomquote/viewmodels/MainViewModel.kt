@@ -28,6 +28,6 @@ class MainViewModel(private val repository: QuoteRepository) : ViewModel() {
         return response
     }
 
-    val quotes : LiveData<QuoteList>
-    get() = repository.quotes
+//    val quotes : LiveData<QuoteList>
+//    get() = repository.quotes
 }

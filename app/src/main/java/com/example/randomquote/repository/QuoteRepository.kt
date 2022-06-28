@@ -24,15 +24,13 @@ class QuoteRepository(
     private val applicationContext: Context
 ) : QuoteListRepository {
 
-    private val quotesLiveData = MutableLiveData<QuoteList>()
-
-    val quotes: LiveData<QuoteList>
-        get() = quotesLiveData
-
     override suspend fun getQuotes(): LiveData<PagingData<Result>> {
         if (NetworkUtils.isInternetAvailable(applicationContext)) {
             val result = quoteService.getQuotes(1)
-            quoteDatabase.quoteDao().addQuotes(result.body()!!.results)
+            //quoteDatabase.quoteDao().addQuotes(result.body()!!.results)       //Cause null pointer exception
+            result.body()?.let {
+                quoteDatabase.quoteDao().addQuotes(it.results)
+            }
            // Log.d("Happy" , quoteDatabase.quoteDao().getQuotes().toString())
             return Pager(
                 config = PagingConfig(
@@ -52,14 +50,19 @@ class QuoteRepository(
             ).liveData
         }
     }
+
+    //    private val quotesLiveData = MutableLiveData<QuoteList>()
+
+//    val quotes: LiveData<QuoteList>
+//        get() = quotesLiveData
 //    suspend fun getQuotes(page: Int) {
 //
 //        if (NetworkUtils.isInternetAvailable(applicationContext)) {
 //            //            val result = quoteService.getQuotes(page)
-////            if(result?.body() != null){
-////                quoteDatabase.quoteDao().addQuotes(result.body()!!.results)
-////                quotesLiveData.postValue(result.body())
-////            }
+//            if(result?.body() != null){
+//                quoteDatabase.quoteDao().addQuotes(result.body()!!.results)
+//                quotesLiveData.postValue(result.body())
+//           }
 //
 //        } else {
 //            val quotes = quoteDatabase.quoteDao().getQuotes()

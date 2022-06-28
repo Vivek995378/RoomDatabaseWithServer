@@ -38,8 +38,9 @@ class PagingAdapter : PagingDataAdapter<Result , PagingAdapter.MyViewHolder>(Dif
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        val result = getItem(position)
-        holder.bind(result!!)
+        val result = getItem(position) ?: return
+        holder.bind(result)
+        //holder.bind(result!!)         //Cause null pointer exception
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
