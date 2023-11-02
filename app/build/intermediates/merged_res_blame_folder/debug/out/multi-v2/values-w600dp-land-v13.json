@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/adda247/AndroidStudioProjects/RandomQuote/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+            "outputFile": "/Users/adda247/AndroidStudioProjects/RoomDatabaseWithServer/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w600dp-land-v13/values-w600dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/home/adda247/.gradle/caches/transforms-3/b3a1b10170dc3b0d106f5a2151e726da/transformed/material-1.4.0/res/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+                    "source": "/Users/adda247/.gradle/caches/transforms-3/c5bc0771904098e09bc4b83d5e929ee7/transformed/material-1.4.0/res/values-w600dp-land-v13/values-w600dp-land-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
