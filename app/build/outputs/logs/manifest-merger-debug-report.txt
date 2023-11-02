@@ -53,7 +53,7 @@ INJECTED from /Users/adda247/AndroidStudioProjects/RoomDatabaseWithServer/app/sr
 INJECTED from /Users/adda247/AndroidStudioProjects/RoomDatabaseWithServer/app/src/main/AndroidManifest.xml:2:1-27:12
 INJECTED from /Users/adda247/AndroidStudioProjects/RoomDatabaseWithServer/app/src/main/AndroidManifest.xml:2:1-27:12
 	package
-		ADDED from /Users/adda247/AndroidStudioProjects/RoomDatabaseWithServer/app/src/main/AndroidManifest.xml:3:5-41
+		ADDED from /Users/adda247/AndroidStudioProjects/RoomDatabaseWithServer/app/src/main/AndroidManifest.xml:3:5-38
 		INJECTED from /Users/adda247/AndroidStudioProjects/RoomDatabaseWithServer/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/adda247/AndroidStudioProjects/RoomDatabaseWithServer/app/src/main/AndroidManifest.xml
 	android:versionName

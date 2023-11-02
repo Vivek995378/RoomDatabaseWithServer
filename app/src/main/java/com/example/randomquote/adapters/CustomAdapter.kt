@@ -5,7 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.cheezycode.randomquote.R
+import com.android.randomquote.R
 import com.example.randomquote.models.Result
 
 class CustomAdapter (private val mList: List<Result>) : RecyclerView.Adapter<CustomAdapter.DbViewHolder>(){

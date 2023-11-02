@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.cheezycode.randomquote.R
+import com.android.randomquote.R
 import com.example.randomquote.models.Result
 
 class PagingAdapter : PagingDataAdapter<Result , PagingAdapter.MyViewHolder>(DiffUtilCallBack()){

@@ -8,7 +8,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.cheezycode.randomquote.R
+import com.android.randomquote.R
 import com.example.randomquote.adapters.CustomAdapter
 import com.example.randomquote.adapters.PagingAdapter
 import com.example.randomquote.viewmodels.MainViewModel

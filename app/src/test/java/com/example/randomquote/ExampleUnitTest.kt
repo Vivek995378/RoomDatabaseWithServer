@@ -1,4 +1,4 @@
-package com.cheezycode.randomquote
+package com.android.randomquote
 
 import org.junit.Test
 

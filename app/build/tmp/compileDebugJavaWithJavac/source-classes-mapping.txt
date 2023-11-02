@@ -1,5 +1,3 @@
-com/cheezycode/randomquote/BuildConfig.java
- com.cheezycode.randomquote.BuildConfig
 com/example/randomquote/db/QuoteDatabase_Impl.java
  com.example.randomquote.db.QuoteDatabase_Impl
  com.example.randomquote.db.QuoteDatabase_Impl$1
@@ -8,3 +6,5 @@ com/example/randomquote/db/QuoteDao_Impl.java
  com.example.randomquote.db.QuoteDao_Impl$1
  com.example.randomquote.db.QuoteDao_Impl$2
  com.example.randomquote.db.QuoteDao_Impl$3
+com/android/randomquote/BuildConfig.java
+ com.android.randomquote.BuildConfig
